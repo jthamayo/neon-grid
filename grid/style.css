@@ -58,3 +58,29 @@ body{
     grid-row-start: span 2;
 } 
 
+@media (width < 779px){
+    .image-gallery img:nth-child(14){
+        grid-row-start: span 2;        
+    }  
+    .image-gallery img:nth-child(13){
+        grid-row-end: 9;
+    }
+}
+
+@media (width < 540px){
+    .image-gallery img:first-child{
+        grid-column-start: 1; 
+        grid-column-end: 2;         
+    } 
+    .image-gallery img:nth-child(11){
+        grid-column-start: 1; 
+        grid-column-end: 2;         
+    }  
+    .image-gallery{
+        grid-auto-rows: 300px 300px;
+        padding: 40px;
+    }
+    .image-gallery img:nth-child(13){
+        grid-row-end: 14;
+    }
+}
